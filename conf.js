@@ -12,6 +12,19 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
+     // 该节点用于加载大体积的静态资源
+    'cfworker': {
+      label: 'CF节点',
+      lines: {
+
+        // 免费版（低权重，分摊一些成本）
+        // 每个账号每天 10 万次免费请求，但有频率限制
+        'b.007.workers.dev': 1,
+        'b.hehe.workers.dev': 1,
+        'b.lulu.workers.dev': 1,
+        'b.jsproxy.workers.dev': 1,
+      },
+    },
     'demo-hk': {
       label: '演示服务-香港节点',
       lines: {
@@ -27,19 +40,7 @@ jsproxy_config({
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
     },
-    // 该节点用于加载大体积的静态资源
-    'cfworker': {
-      label: 'CF节点',
-      lines: {
 
-        // 免费版（低权重，分摊一些成本）
-        // 每个账号每天 10 万次免费请求，但有频率限制
-        'b.007.workers.dev': 1,
-        'b.hehe.workers.dev': 1,
-        'b.lulu.workers.dev': 1,
-        'b.jsproxy.workers.dev': 1,
-      }
-    }
   },
 
   /**
