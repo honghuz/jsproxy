@@ -27,13 +27,6 @@ jsproxy_config({
         'node-aliyun-sg.etherdream.com:8443': 1,
       },
     },
-    'demo-cf1': {
-      label: 'CF节点1',
-      hidden: true,
-      lines: {
-        'b.lulu.workers.dev': 1,
-      }
-    },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
       label: 'CF节点',
