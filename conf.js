@@ -36,7 +36,7 @@ jsproxy_config({
     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
-      label: 'CF节点1',
+      label: 'CF节点',
       lines: {
 
         // 免费版（低权重，分摊一些成本）
@@ -53,7 +53,7 @@ jsproxy_config({
    * 默认节点
    */
   // node_default: 'mysite',
-  node_default: /github\.io$/.test(location.host) ? 'demo-hk' : 'mysite',
+  node_default: /github\.io$/.test(location.host) ? 'cfworker' : 'mysite',
 
   /**
    * 加速节点
