@@ -29,17 +29,15 @@ jsproxy_config({
     },
     'demo-cf1': {
       label: 'CF节点1',
+      hidden: true,
       lines: {
         'b.lulu.workers.dev': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
     'cfworker': {
-      label: '',
-      hidden: true,
+      label: 'CF节点1',
       lines: {
-        // 收费版（高权重）
-        'node-cfworker-2.etherdream.com': 4,
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
